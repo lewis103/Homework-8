@@ -1,0 +1,15 @@
+Options = matrix(RR, 4, [.5, .3, .2, 0,  # Start test
+                   0, 0, .2, .8,  # Cheat
+                    0,  0, 1, 0, # Pass
+                   0,   0,   0, 1]) # Get caught/FAIL!!
+
+emission_symbols = ['No way to cheat', 'I see my neighbors test...', 'I know this!!', 'un oh', 'busted!!']
+Thoughts = matrix(RR, 4, 5, [.5,.3,.2,0,0,  # Start test
+                      0,0,.2,.7,.1,  # Cheat
+                      0,0,1,0,0, # Pass
+                      0,0,0,.5,.5]) # Get caught/FAIL!!
+
+initial = [0,1,0,0]
+
+model = hmm.DiscreteHiddenMarkovModel(Options, Thoughts, initial, emission_symbols)
+
