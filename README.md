@@ -9,6 +9,9 @@ Hidden Markov Model
 (2) Indicates passing the test
 (3) Indicates getting caught/failing
 
-Since both 2 and 3 would be a end result (passing or failing) there is a 100% chance or staying there.
+From starting (0) you can either know the material and pass or try and cheat.
 
-In my Markov Model I simulated the chances of needing to cheat or knowing the material, and the chances of getting caught or passing. You start the test out, you either just sit there/no way to cheat (50%) either know the material (20%) or cheat (30%) from there you either pass or get chaught.
+from (1) you can either get away with cheating and pass (2) or get cuaght cheating (3)
+
+Since both passing (2) and failing (3) are an end result, thus there is a 100% chance or staying there.
+
